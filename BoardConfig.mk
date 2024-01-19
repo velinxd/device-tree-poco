@@ -254,9 +254,9 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 # VINTF
 DEVICE_MATRIX_FILE := $(CONFIGS_PATH)/vintf/compatibility_matrix.xml
-DEVICE_MANIFEST_SKUS := ukee
-DEVICE_MANIFEST_UKEE_FILES := \
-    $(CONFIGS_PATH)/vintf/manifest_ukee.xml \
+DEVICE_MANIFEST_SKUS := taro
+DEVICE_MANIFEST_TARO_FILES := \
+    $(CONFIGS_PATH)/vintf/manifest_taro.xml \
     $(CONFIGS_PATH)/vintf/manifest_xiaomi.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(CONFIGS_PATH)/vintf/vendor_framework_compatibility_matrix.xml \
