@@ -3,3 +3,6 @@ type hal_xiaomi_camera_hwservice, hwservice_manager_type;
 
 # Touch Feature
 type hal_touchfeature_xiaomi_hwservice, hwservice_manager_type;
+
+#Fingerprint
+type hal_xiaomi_fingerprint_hwservice, hwservice_manager_type;
