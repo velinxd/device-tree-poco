@@ -1,8 +1,9 @@
-# Device tree for Poco F5/Redmi Note 12 Turbo
+## Device configuration for POCO F4 GT
+=========================================
 
-Poco F5/Redmi Note 12 Turbo (codenamed _"marble"_) is a high-end, mid-range smartphone from Xiaomi.
+The POCO F4 GT (codenamed _"ingres"_) is a high-end gaming smartphone from POCO.
 
-It was announced & released in March 2023.
+It was globally released in late April 2022.
 
 ## Needed patches
 
@@ -27,19 +28,18 @@ Media (frameworks_av)
 
 ## Device specifications
 
-|      Basic | Spec Sheet                                                        |
-| ---------: | :---------------------------------------------------------------- |
-|        SoC | Snapdragon® 7+ Gen 2 (SM7475-AB)                                  |
-|        CPU | Octa-core CPU with 1x Cortex-X2 & 3x Cortex-A710 & 4x Cortex-A510 |
-|        GPU | Adreno 725 (580 MHz)                                              |
-|     Memory | 8/12/16 GB RAM (LPDDR5)                                           |
-| Shipped OS | 13.0 with MIUI 14                                                 |
-|    Storage | 256/512/1024 GB (UFS 3.1)                                         |
-|    Battery | 5000 mAh, non-removable, 67W fast charge                          |
-|    Display | 1080 x 2400 pixels, 20:9 ratio, 6.67 inches, 120 hz, AMOLED       |
-|     Camera | 64MP (Primary), 8MP (Ultra-wide), 2MP (Macro)                     |
+Basic   | Spec Sheet
+-------:|:-------------------------
+Platform | Snapdragon® 8 Gen 1 (SM8450)
+RAM & Storage | 8GB/128GB, 12GB/256GB (LPDDR5 RAM, UFS 3.1 storage)
+Shipped Android Version | 12
+Battery | Non-removable, 4700 mAh
+Display | 6.67" flat AMOLED DotDisplay, 120Hz, 2400x1080 (~395 ppi)
+Rear camera | 64MP IMX686 wide angle, 8MP ultra wide-angle, 2MP macro
+Front camera | 20MP IMX596 in-display
 
-![Redmi Note 12 Turbo](https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1679982565.12241762.png)
+
+![POCO F4 GT](https://i01.appmifile.com/webfile/globalimg/products/pc/poco-f4-gt/specs01.png "POCO F4 GT in all colours")
 
 ## Copyright
 

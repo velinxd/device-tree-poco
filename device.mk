@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Call the proprietary setup.
-$(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
+$(call inherit-product, vendor/xiaomi/ingres/ingres-vendor.mk)
 
 # Enable updating of APEXes.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -412,30 +412,27 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AospWifiResOverlayMarble \
-    ApertureOverlayMarble \
-    CarrierConfigResMarble \
+    AospWifiResOverlayIngres \
+    ApertureOverlayIngres \
+    CarrierConfigResIngres \
     FrameworksResCommon \
-    FrameworksResOverlayMarble \
-    SettingsOverlayMarble \
-    SystemUIOverlayMarble \
+    FrameworksResOverlayIngres \
+    SettingsOverlayIngres \
+    SystemUIOverlayIngres \
     TelecommResCommon \
     TelephonyResCommon \
     TetheringResCommon \
-    UpdatesResOverlayMarble \
-    WifiResMarble \
+    UpdatesResOverlayIngres \
+    WifiResIngres \
     WifiResTarget
 
 PRODUCT_PACKAGES += \
-    AospWifiResOverlayMarbleChina \
-    AospWifiResOverlayMarbleGlobal \
-    AospWifiResOverlayMarbleIndia \
+    AospWifiResOverlayIngresChina \
+    AospWifiResOverlayIngresGlobal \
     SettingsOverlayGlobal \
     SettingsOverlayChina \
-    SettingsOverlayIndia \
     SettingsProviderOverlayChina \
-    SettingsProviderOverlayGlobal \
-    SettingsProviderOverlayIndia
+    SettingsProviderOverlayGlobal
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -486,7 +483,7 @@ PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     fstab.qcom \
     init.class_main.sh \
-    init.marble.rc \
+    init.ingres.rc \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \

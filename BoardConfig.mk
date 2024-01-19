@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/marble
+DEVICE_PATH := device/xiaomi/ingres
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
@@ -91,8 +91,8 @@ BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtbs
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_marble
-TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_marble
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_ingres
+TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_ingres
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(CONFIGS_PATH)/config.fs
@@ -161,7 +161,7 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 BOARD_USES_METADATA_PARTITION := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := marble, marblein
+TARGET_OTA_ASSERT_DEVICE := ingres, ingresin
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -262,8 +262,8 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(CONFIGS_PATH)/vintf/vendor_framework_compatibility_matrix.xml \
     $(CONFIGS_PATH)/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/evolution/config/device_framework_matrix.xml
-ODM_MANIFEST_SKUS += marble
-ODM_MANIFEST_MARBLE_FILES := $(CONFIGS_PATH)/vintf/manifest_nfc.xml
+ODM_MANIFEST_SKUS += ingres
+ODM_MANIFEST_INGRES_FILES := $(CONFIGS_PATH)/vintf/manifest_nfc.xml
 
 # Vibrator
 SOONG_CONFIG_NAMESPACES += XIAOMI_VIBRATOR
@@ -291,4 +291,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/marble/BoardConfigVendor.mk
+-include vendor/xiaomi/ingres/BoardConfigVendor.mk
