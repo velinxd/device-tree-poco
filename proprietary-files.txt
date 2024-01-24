@@ -469,6 +469,7 @@ vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libsnpe_dsp_domains_v3.so
 vendor/lib/libsynx.so
 vendor/lib/libthreadutils.so
+vendor/lib64/libtriplecam_optical_zoom_control.so|f16ca6880c90840bcfade468e7e5fffbd9ed860f
 vendor/lib/libxmi_slow_motion_mein.so
 vendor/lib/vendor.xiaomi.hardware.quickcamera@1.0.so
 vendor/lib64/camera/fdconfigpreview.bin
@@ -490,6 +491,9 @@ vendor/lib64/libalCFR.so
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
+vendor/lib64/libwa_refocus.so
+vendor/lib64/libarcsoft_beautyshot.so
+vendor/lib64/libarc_translate.so|59e10598ab595da840ffbb3071df2cc5c1357e7a
 vendor/lib64/libarcsoft_qnnhtp.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libbeauty_face_interface.so
