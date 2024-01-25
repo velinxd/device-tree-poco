@@ -1,7 +1,7 @@
 # Camera
-vendor.xiaomi.hardware.campostproc::IMiPostProcService       u:object_r:hal_xiaomi_camera_hwservice:s0
-vendor.xiaomi.hardware.quickcamera::IQuickCameraService      u:object_r:hal_xiaomi_camera_hwservice:s0
-vendor.xiaomi.hardware.bgservice::IBGService                 u:object_r:hal_xiaomi_camera_hwservice:s0
+vendor.xiaomi.hardware.campostproc::IMiPostProcService       u:object_r:vendor_hal_camerapostproc_xiaomi_hwservice:s0
+vendor.xiaomi.hardware.quickcamera::IQuickCameraService      u:object_r:hal_quickcamera_hwservice:s0
+vendor.xiaomi.hardware.bgservice::IBGService                 u:object_r:vendor_hal_camerapostproc_xiaomi_hwservice:s0
 
 # Displayfeature
 vendor.xiaomi.hardware.displayfeature::IDisplayFeature       u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0
