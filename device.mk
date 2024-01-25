@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.aon@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libMegviiFacepp-0.5.2 \
+    libmegface
+
 # Prebuilt packages
 PRODUCT_PACKAGES += \
     MlkitBarcodeUI \
