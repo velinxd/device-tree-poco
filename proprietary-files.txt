@@ -3427,7 +3427,7 @@ vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc
 vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml
 vendor/lib64/vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk_platform.so
-vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so|74da85de979ac7f19bd0afd9b068e3aa75a472af
 
 # Vibrator (Haptics)
 vendor/lib64/libaachaptics.so
