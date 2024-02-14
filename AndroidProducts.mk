@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ingres.mk
+    $(LOCAL_DIR)/cherish_ingres.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ingres-eng \
-    lineage_ingres-userdebug \
-    lineage_ingres-user
+    cherish_ingres-eng \
+    cherish_ingres-userdebug \
+    cherish_ingres-user

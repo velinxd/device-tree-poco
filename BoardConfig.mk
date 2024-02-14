@@ -8,6 +8,15 @@ DEVICE_PATH := device/xiaomi/ingres
 KERNEL_PATH := $(DEVICE_PATH)-kernel
 CONFIGS_PATH := $(DEVICE_PATH)/configs
 
+ALLOW_MISSING_DEPENDENCIES := true
+
+#Build
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 # A/B
 AB_OTA_UPDATER := true
 
@@ -99,6 +108,7 @@ BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
+BUILD_BROKEN_CLANG_PROPERTY := true
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -116,8 +126,8 @@ BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     disable_dma32=on \
-    bootinfo.fingerprint=$(LINEAGE_VERSION) \
-    mtdoops.fingerprint=$(LINEAGE_VERSION)
+    bootinfo.fingerprint=$(CHERISH_VERSION) \
+    mtdoops.fingerprint=$(CHERISH_VERSION)
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
@@ -260,7 +270,7 @@ DEVICE_MANIFEST_TARO_FILES := \
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(CONFIGS_PATH)/vintf/vendor_framework_compatibility_matrix.xml \
     $(CONFIGS_PATH)/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/cherish/config/device_framework_matrix.xml
 ODM_MANIFEST_SKUS += ingres
 ODM_MANIFEST_INGRES_FILES := $(CONFIGS_PATH)/vintf/manifest_nfc.xml
 

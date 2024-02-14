@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -21,7 +21,7 @@ $(call inherit-product, device/xiaomi/ingres/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := ingres
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_ingres
+PRODUCT_NAME := cherish_ingres
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
